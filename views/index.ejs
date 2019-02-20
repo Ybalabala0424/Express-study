@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <button id="btn1" onclick="register()">注册</button>
+    <br>
+    <button id="btn2" onclick="go()">登录</button>
+<script>
+    function register() {
+        window.location='/register';
+    }
+    function go() {
+        window.location='/go';
+    }
+</script>
+</body>
+</html>
