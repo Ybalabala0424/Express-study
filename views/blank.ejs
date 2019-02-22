@@ -5,16 +5,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
 </head>
 <body>
-    <p>The page is used for <%= title %></p>
-    Account: <input></input>
-    <br>
-    Password:<input></input>
-    <br>
-    <button id="btn" onclick="reg()">注册</button>
-<script>
-    function reg(){
-        window.location='/go'
-    }
-</script>
+    <p><%= name %>近几天的天气预报如下：</p>
+<ul>
+    <% for (var i=0;i<数组.length;i++){%>
+        <li>
+            <%=data[i]%>
+        </li>
+    <%} %>
+</ul>
 </body>
 </html>
